@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="Color_palette.css" rel="stylesheet">
   </head>
-  <body class=" ">
+  <body class="bg-white dark:bg-gray-800">
     <!-- Navigation -->
     <header>
       <nav class="sticky top-0 z-50 bg-gray-800 text-white p-4">
@@ -51,7 +52,7 @@
     <!-- about section -->
     <section id="about" class="py-20">
       <div
-        class="container text-center -px4 sm:px-6 lg:px-8 bg-white rounded-lg shadow-md w-3/4 mx-auto"
+        class="container text-center -px4 sm:px-6 lg:px-8 bg-white rounded-lg w-3/4 mx-auto"
       >
         <h2 class="text-3xl font-bold mb-4">About Me</h2>
         <p class="text-gray-700 max-w-2xl mx-auto">
@@ -62,16 +63,18 @@
         </p>
       </div>
     </section>
+
     <!-- skills section languages, frameworks & tools, Databases, -->
-    <section id="skills" class="py-20 bg-gray-200">
+
+    <section id="skills" class="py-20">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Languages card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Languages</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-red-100 border-t-red-500 p-6">
+            <h3 class="text-xl font-bold mb-4 text-center text-red-500">Languages</h3>
             <ul class="list-disc list-inside text-gray-700">
               <li>Html</li>
               <li>Css</li>
@@ -81,8 +84,8 @@
          
         <!-- Frameworks & Tools card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Frameworks & Tools</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-green-100 border-t-green-500 p-6">
+            <h3 class="text-xl font-bold mb-4 text-center text-green-500">Frameworks & Tools</h3>
             <ul class="list-disc list-inside text-gray-700">
               <li>Git</li>
               <li>Tailwind CSS</li>
@@ -91,13 +94,15 @@
           
         <!-- Database card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Databases</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-blue-100 border-t-blue-500 p-6">
+            <h3 class="text-xl font-bold mb-4 text-center text-blue-500">Databases</h3>
             <ul class="list-disc list-inside text-gray-700">
-              
+              <!-- <li>SQL</li> -->
             </ul>
           </div>
-          <!-- Add more skill categories as needed -->
+
+          <!-- Add more skill categories -->
+
         </div>
       </div>
     </section>
@@ -106,27 +111,98 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
           <!-- Project Card 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
             <h3 class="text-xl font-bold mb-4">CS50 scratch Project</h3>
             <p class="text-gray-700 mb-4">
-              A Short platformer minigame.
+              A Short platformer minigame where the player jumps between platforms collecting as many coins as possible in a limited time.
             </p>
             <a href="#" class="text-blue-500 hover:underline">View Project</a>
           </div>
+
           <!-- Project Card 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
             <h3 class="text-xl font-bold mb-4">Project Title 2</h3>
             <p class="text-gray-700 mb-4">
               A brief description of the project, highlighting its features and technologies used.
             </p>
             <a href="#" class="text-blue-500 hover:underline">View Project</a>
           </div>
-          <!-- Add more project cards as needed -->
+
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 3</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 4</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 5</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 6 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 6</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
         </div>
       </div>
+    </section>
     <!-- education section -->
-
+    <section id="education" class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">University Name</h3>
+          <p class="text-gray-700 mb-2">Degree: Bachelor of Science in Computer Science</p>
+          <p class="text-gray-700 mb-2">Graduation Year: 2023</p>
+          <p class="text-gray-700">Relevant Coursework: Data Structures, Algorithms, Web Development</p>
+        </div>
+        <!-- Add more education entries as needed -->
+      </div>
+    </section>
     <!-- contact section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+          </form>
+        </div>
+      </div>
   </body>
 </html>
