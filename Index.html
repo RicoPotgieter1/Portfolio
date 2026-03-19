@@ -1,13 +1,16 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="Color_palette.css" rel="stylesheet">
   </head>
-  <body class=" ">
+  <body class=""bg-white dark:bg-gray-800>
     <!-- Navigation -->
     <header>
       <nav class="sticky top-0 z-50 bg-gray-800 text-white p-4">
@@ -51,7 +54,7 @@
     <!-- about section -->
     <section id="about" class="py-20">
       <div
-        class="container text-center -px4 sm:px-6 lg:px-8 bg-white rounded-lg shadow-md w-3/4 mx-auto"
+        class="container text-center -px4 sm:px-6 lg:px-8 bg-white rounded-lg w-3/4 mx-auto"
       >
         <h2 class="text-3xl font-bold mb-4">About Me</h2>
         <p class="text-gray-700 max-w-2xl mx-auto">
@@ -62,27 +65,35 @@
         </p>
       </div>
     </section>
+
     <!-- skills section languages, frameworks & tools, Databases, -->
-    <section id="skills" class="py-20 bg-gray-200">
+
+    <section id="skills" class="py-20">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Languages card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Languages</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-red-100 border-t-red-500 p-6">
+            <div class="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#ef4444" class="w-6 h-6 mb-4 mr-1"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 240-64 0 0-240-384 0 0 240-64 0 0-240zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+              <h3 class="text-xl font-bold mb-4 text-center text-red-500">Languages</h3>
+            </div>
             <ul class="list-disc list-inside text-gray-700">
               <li>Html</li>
-              <li>Css</li>
+              <li>CSS</li>
               <!-- <li>JavaScript</li> -->
             </ul>
           </div>
          
         <!-- Frameworks & Tools card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Frameworks & Tools</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-green-100 border-t-green-500 p-6">
+            <div class="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#22c55e" class="w-6 h-6 mb-4 mr-1"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M70.8-6.7c5.4-5.4 13.8-6.2 20.2-2L209.9 70.5c8.9 5.9 14.2 15.9 14.2 26.6l0 49.6 90.8 90.8c33.3-15 73.9-8.9 101.2 18.5L542.2 382.1c18.7 18.7 18.7 49.1 0 67.9l-60.1 60.1c-18.7 18.7-49.1 18.7-67.9 0L288.1 384c-27.4-27.4-33.5-67.9-18.5-101.2l-90.8-90.8-49.6 0c-10.7 0-20.7-5.3-26.6-14.2L23.4 58.9c-4.2-6.3-3.4-14.8 2-20.2L70.8-6.7zm145 303.5c-6.3 36.9 2.3 75.9 26.2 107.2l-94.9 95c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8l135.4-135.5 35.2 35.1zM384.1 0c20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1L388.8 91.3c-3 3-4.7 7.1-4.7 11.3l0 41.4c0 8.8 7.2 16 16 16l41.4 0c4.2 0 8.3-1.7 11.3-4.7l56.7-56.7c7.6-7.5 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 43.2-17.2 82.3-45 111.1l-49.1-49.1c-33.1-33-78.5-45.7-121.1-38.4l-56.8-56.8 0-29.7-.2-5c-.8-12.4-4.4-24.3-10.5-34.9 29.4-35 73.4-57.2 122.7-57.3z"/></svg>
+              <h3 class="text-xl font-bold mb-4 text-center text-green-500">Frameworks & Tools</h3>
+            </div>
             <ul class="list-disc list-inside text-gray-700">
               <li>Git</li>
               <li>Tailwind CSS</li>
@@ -91,13 +102,18 @@
           
         <!-- Database card -->
 
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-bold mb-4">Databases</h3>
+          <div class="bg-white rounded-lg shadow-md border-4 border-blue-100 border-t-blue-500 p-6">
+            <div class="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#3b82f6" class="w-6 h-6 mb-4 mr-1"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2S96.4 246.5 49.5 229.8c-17.6-6.3-34.7-14.2-49.5-24L0 288c0 44.2 100.3 80 224 80s224-35.8 224-80l0-82.2zm0-77.8l0-48C448 35.8 347.7 0 224 0S0 35.8 0 80l0 48c0 44.2 100.3 80 224 80s224-35.8 224-80zM398.5 389.8C351.6 406.5 289.9 416 224 416S96.4 406.5 49.5 389.8c-17.6-6.3-34.7-14.2-49.5-24L0 432c0 44.2 100.3 80 224 80s224-35.8 224-80l0-66.2c-14.8 9.8-31.8 17.7-49.5 24z"/></svg>
+              <h3 class="text-xl font-bold mb-4 text-center text-blue-500">Databases</h3>
+            </div>
             <ul class="list-disc list-inside text-gray-700">
-              
+              <!-- <li>SQL</li> -->
             </ul>
           </div>
-          <!-- Add more skill categories as needed -->
+
+          <!-- Add more skill categories -->
+
         </div>
       </div>
     </section>
@@ -106,27 +122,98 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
           <!-- Project Card 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
             <h3 class="text-xl font-bold mb-4">CS50 scratch Project</h3>
             <p class="text-gray-700 mb-4">
-              A Short platformer minigame.
+              A Short platformer minigame where the player jumps between platforms collecting as many coins as possible in a limited time.
             </p>
             <a href="#" class="text-blue-500 hover:underline">View Project</a>
           </div>
+
           <!-- Project Card 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
             <h3 class="text-xl font-bold mb-4">Project Title 2</h3>
             <p class="text-gray-700 mb-4">
               A brief description of the project, highlighting its features and technologies used.
             </p>
             <a href="#" class="text-blue-500 hover:underline">View Project</a>
           </div>
-          <!-- Add more project cards as needed -->
+
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 3</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 4</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 5</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <!-- Project Card 6 -->
+          <div class="bg-white rounded-lg shadow-md p-6 border-2 border-black">
+            <h3 class="text-xl font-bold mb-4">Project Title 6</h3>
+            <p class="text-gray-700 mb-4">
+              A brief description of the project, highlighting its features and technologies used.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
         </div>
       </div>
+    </section>
     <!-- education section -->
-
+    <section id="education" class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+        <div class="bg-white rounded-lg shadow-md border border-2 border-black p-6">
+          <h3 class="text-xl font-bold mb-4">University Name</h3>
+          <p class="text-gray-700 mb-2">Degree: Bachelor of Science in Computer Science</p>
+          <p class="text-gray-700 mb-2">Graduation Year: 2023</p>
+          <p class="text-gray-700">Relevant Coursework: Data Structures, Algorithms, Web Development</p>
+        </div>
+        <!-- Add more education entries as needed -->
+      </div>
+    </section>
     <!-- contact section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-md border-2 border-black p-6">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-1 border-black rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-1 border-black rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-1 border-black rounded-lg focus:outline-none focus:ring focus:border-blue-300" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+          </form>
+        </div>
+      </div>
   </body>
 </html>
