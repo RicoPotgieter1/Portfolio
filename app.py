@@ -12,8 +12,6 @@ logging.basicConfig(level=logging.INFO)
 resend.api_key = os.getenv('RESEND_API_KEY')
 NOTIFY_EMAIL = os.getenv('EMAIL_ADDRESS')
 
-EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
-
 app = Flask(__name__)
 CORS(app, origins=["https://rico-portfolio-wine.vercel.app"])
 
