@@ -4,7 +4,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(form);
 
-    fetch('https://portfolio-26xe.onrender.com', {
+    fetch('https://portfolio-26xe.onrender.com/contact', {
         method: 'POST',
         body: formData,
     })
