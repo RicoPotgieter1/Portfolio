@@ -11,7 +11,7 @@ EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://rico-portfolio-wine.vercel.app"])
 
 @app.route('/contact', methods=['POST'])
 def contact():
@@ -47,4 +47,4 @@ def send_email(first_name, last_name, email, message):
         server.send_message(msg)
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(debug=False)
